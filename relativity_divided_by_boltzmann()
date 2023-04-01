@@ -1,0 +1,11 @@
+//import numpy as np
+
+def relativity_divided_by_boltzmann():
+    c = 299792458   # speed of light in m/s
+    G = 6.67430e-11  # gravitational constant in m^3/(kg s^2)
+    k = 1.380649e-23 # Boltzmann constant in J/K
+
+    equation = c**4 / (4 * np.pi * G * k)
+    return equation
+    
+    //This implementation assumes that you have the numpy library installed in your Python environment, as the np alias is used to access the pi constant. If you don't have numpy installed, you can do so by running pip install numpy in your terminal/command prompt.
