@@ -1,0 +1,15 @@
+
+
+import math
+
+def relativistic_velocity(E, m):
+    h = 6.626e-34  # Planck constant
+    c = 2.998e8    # speed of light
+    f = E / h      # frequency
+
+    term = (h * f / m / c**2)**2
+    denominator = h * f * math.sqrt(1 - term)
+    numerator = m * c**2
+    v = numerator / denominator
+
+    return v
