@@ -1,0 +1,14 @@
+//this function represents the matemathical equation: E / (hf) = mc^2 / (hf * √(1 - (hf/mc^2)^2))
+// This function takes two parameters: relativity and planck.
+    It returns the value of relativity divided by planck.
+  
+    result = relativity / planck
+    return result
+    
+import math
+
+def calculate_energy(h, f, m, c):
+    E = h * f
+    numerator = m * c**2
+    denominator = h * f * math.sqrt(1 - ((h*f)/(m*c**2))**2)
+    return numerator / denominator
